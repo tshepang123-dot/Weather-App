@@ -1,0 +1,51 @@
+/* Weather App - base styles. Colours come from the Dribbble palette. */
+:root {
+  --bg-top: #4D65FA;
+  --bg-bottom: #1462A9;
+  --card-top: #13B8F9;
+  --card-mid: #139AFC;
+  --card-bottom: #1373ED;
+  --navy: #00223F;
+  --navy-deep: #00091A;
+  --muted: #68ADFF;
+  --accent: #F9EE29;
+  --cloud: #E2DBD0;
+  --text: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: var(--text);
+  background: #0b1330;
+}
+
+button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; }
+:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+h1 { margin: 8px 0 0; font-size: 32px; font-weight: 700; }
+p { margin: 0; line-height: 1.5; }
+
+/* A phone-width column: full screen on phones, centred on desktop */
+.app {
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  overflow: hidden;
+}
+
+.screen {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Text for screen readers only */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
