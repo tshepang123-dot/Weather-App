@@ -1,4 +1,4 @@
-import type { Settings, Weather } from '../types';
+import type { Settings, Weather } from '../services/types';
 import Icon from '../components/Icon';
 import Banner from '../components/Banner';
 import WeatherCard from '../components/WeatherCard';

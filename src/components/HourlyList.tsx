@@ -1,4 +1,4 @@
-import type { Hour, Settings } from '../types';
+import type { Hour, Settings } from '../services/types';
 import { hourLabel, toTemp } from '../lib/units';
 
 // A row of small chips you can scroll sideways: one per hour.
