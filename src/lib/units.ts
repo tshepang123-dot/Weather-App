@@ -1,4 +1,4 @@
-import type { Settings } from '../types';
+import type { Settings } from '../services/types';
 
 // Weather values are stored in °C and km/h. These convert them for display.
 export const toTemp = (c: number, unit: Settings['tempUnit']) =>

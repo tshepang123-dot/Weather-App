@@ -1,5 +1,5 @@
 .permission {
-  /* Palette variables */
+  /* Palette: replace these with the hex codes from your Figma file */
   --nav-900: #0b1230;
   --blue-800: #12308a;
   --blue-600: #2556dc;
@@ -14,24 +14,18 @@
   max-width: 430px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 64px 28px 40px; /* kept your spacing */
+  padding: 72px 28px 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   text-align: center;
   color: var(--white);
-  background: linear-gradient(
-    180deg,
-    var(--nav-900) 0%,
-    var(--blue-800) 38%,
-    var(--blue-600) 72%,
-    var(--blue-500) 100%
-  );
+  background: linear-gradient(180deg, var(--nav-900) 0%, var(--blue-800) 38%, var(--blue-600) 72%, var(--blue-500) 100%);
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-/* Top section */
+/* Top: icon, heading, text */
 .permission .perm-top {
   flex: 1;
   display: flex;
@@ -52,8 +46,7 @@
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 50%;
-  box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.06),
-              0 0 0 30px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.06), 0 0 0 30px rgba(255, 255, 255, 0.03);
 }
 
 .permission h1 {
@@ -68,11 +61,10 @@
   max-width: 320px;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--white-70);
+  color: rgba(255, 255, 255, 0.78);
 }
 
-/* Error message */
-.permission .notice {
+.permission .perm-top .notice {
   padding: 10px 14px;
   font-size: 0.9rem;
   color: var(--white);
@@ -81,7 +73,7 @@
   border-radius: 12px;
 }
 
-/* Bottom section: buttons */
+/* Bottom: buttons */
 .permission .perm-actions {
   display: flex;
   flex-direction: column;

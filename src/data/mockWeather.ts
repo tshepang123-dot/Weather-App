@@ -1,4 +1,4 @@
-import type { Day, Hour, Settings, Weather } from '../types';
+import type { Day, Hour, Settings, Weather } from '../services/types';
 
 // SAMPLE data so we can build and style the Home page first.
 // In the weather-api branch this is replaced by real data.

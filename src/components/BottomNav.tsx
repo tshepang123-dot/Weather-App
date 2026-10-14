@@ -1,4 +1,4 @@
-import type { Page } from '../types';
+import type { Page } from '../services/types';
 import Icon, { type IconName } from './Icon';
 
 const ITEMS: { page: Page; label: string; icon: IconName }[] = [

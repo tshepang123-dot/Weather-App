@@ -1,5 +1,5 @@
-import type { Settings, Weather } from '../types';
-import { cardTone, describe } from '../lib/weatherCodes';
+import type { Settings, Weather } from '../services/types';
+import { cardTone, describe } from '../utils/weatherCodes';
 import { toTemp, toWind, windLabel } from '../lib/units';
 import WeatherIcon from './WeatherIcon';
 

@@ -1,4 +1,4 @@
-import type { Kind } from '../lib/weatherCodes';
+import type { Kind } from '../utils/weatherCodes';
 
 // Simple drawn weather icons in the design's colours (cloud #E2DBD0, accent #F9EE29).
 export default function WeatherIcon({ kind, size = 32 }: { kind: Kind; size?: number }) {
